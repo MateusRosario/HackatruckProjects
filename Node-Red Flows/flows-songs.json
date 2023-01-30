@@ -1,0 +1,342 @@
+[
+    {
+        "id": "c7bd52643037d91a",
+        "type": "tab",
+        "label": "Flow 2 - MateusRosario - Músicas",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "832843729b24c3fd",
+        "type": "cloudantplus out",
+        "z": "c7bd52643037d91a",
+        "name": "",
+        "cloudant": "3f7137731a557ae3",
+        "database": "mateusrosariosongs",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 580,
+        "y": 460,
+        "wires": [
+            [
+                "3bf594220436469a",
+                "9b9b1d0e1c7822f8"
+            ]
+        ]
+    },
+    {
+        "id": "e188a93acf41e597",
+        "type": "cloudantplus in",
+        "z": "c7bd52643037d91a",
+        "name": "mateusrosariosongs",
+        "cloudant": "3f7137731a557ae3",
+        "database": "mateusrosariosongs",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 580,
+        "y": 300,
+        "wires": [
+            [
+                "ad10e18c95367e8a",
+                "d499bc27c8b454cc"
+            ]
+        ]
+    },
+    {
+        "id": "b3c86597835fac9b",
+        "type": "http in",
+        "z": "c7bd52643037d91a",
+        "name": "[GET] Pega Músicas",
+        "url": "/mateus-musics",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 300,
+        "wires": [
+            [
+                "e188a93acf41e597"
+            ]
+        ]
+    },
+    {
+        "id": "ad10e18c95367e8a",
+        "type": "http response",
+        "z": "c7bd52643037d91a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "6aca6e4bae329d39",
+        "type": "http in",
+        "z": "c7bd52643037d91a",
+        "name": "[POST] Salva Música",
+        "url": "/mateus-music",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 460,
+        "wires": [
+            [
+                "832843729b24c3fd"
+            ]
+        ],
+        "info": "# JSON Esperado\n\n{\n  \"name\": \"name\",\n  \"capa\": \"\",\n  \"artista\": \"\",\n}"
+    },
+    {
+        "id": "3bf594220436469a",
+        "type": "http response",
+        "z": "c7bd52643037d91a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "aa8e22bac59e452d",
+        "type": "http in",
+        "z": "c7bd52643037d91a",
+        "name": "[GET] Pega Música",
+        "url": "/mateus-music",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 380,
+        "wires": [
+            [
+                "cd6935bcc99bc547"
+            ]
+        ]
+    },
+    {
+        "id": "e7944f4c8797a13d",
+        "type": "http response",
+        "z": "c7bd52643037d91a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "cd6935bcc99bc547",
+        "type": "cloudantplus in",
+        "z": "c7bd52643037d91a",
+        "name": "mateusrosariosongs",
+        "cloudant": "3f7137731a557ae3",
+        "database": "mateusrosariosongs",
+        "service": "_ext_",
+        "search": "_id_",
+        "design": "",
+        "index": "",
+        "x": 580,
+        "y": 380,
+        "wires": [
+            [
+                "e7944f4c8797a13d",
+                "0d8579a9da081f32"
+            ]
+        ]
+    },
+    {
+        "id": "d499bc27c8b454cc",
+        "type": "debug",
+        "z": "c7bd52643037d91a",
+        "name": "Response GET personagens",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "0d8579a9da081f32",
+        "type": "debug",
+        "z": "c7bd52643037d91a",
+        "name": "Response GET personagem",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "9b9b1d0e1c7822f8",
+        "type": "debug",
+        "z": "c7bd52643037d91a",
+        "name": "Response Post personagem",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "c8ba42835e691a66",
+        "type": "cloudantplus out",
+        "z": "c7bd52643037d91a",
+        "name": "",
+        "cloudant": "3f7137731a557ae3",
+        "database": "mateusrosariosongs",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 580,
+        "y": 540,
+        "wires": [
+            [
+                "2b7353defaafbec1",
+                "849d57fc780e194a"
+            ]
+        ]
+    },
+    {
+        "id": "ddd145c3d37318a4",
+        "type": "http in",
+        "z": "c7bd52643037d91a",
+        "name": "[PUT] Atualiza Música",
+        "url": "/mateus-music",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 540,
+        "wires": [
+            [
+                "c8ba42835e691a66"
+            ]
+        ],
+        "info": "# JSON Esperado\n\n{\n  \"_id\": \"\",\n  \"_rev\": \"\",\n  \"name\": \"name\",\n  \"capa\": \"\",\n  \"artista\": \"\",\n}"
+    },
+    {
+        "id": "2b7353defaafbec1",
+        "type": "http response",
+        "z": "c7bd52643037d91a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "849d57fc780e194a",
+        "type": "debug",
+        "z": "c7bd52643037d91a",
+        "name": "Response PUT personagem",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "190b7331966ca799",
+        "type": "cloudantplus out",
+        "z": "c7bd52643037d91a",
+        "name": "",
+        "cloudant": "3f7137731a557ae3",
+        "database": "mateusrosariosongs",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "delete",
+        "x": 580,
+        "y": 620,
+        "wires": [
+            [
+                "c6d95eadb65d12a2",
+                "97731a25be04464a"
+            ]
+        ]
+    },
+    {
+        "id": "80f784ac2fd57775",
+        "type": "http in",
+        "z": "c7bd52643037d91a",
+        "name": "[DELETE] Atualiza Música",
+        "url": "/mateus-music",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 230,
+        "y": 620,
+        "wires": [
+            [
+                "190b7331966ca799"
+            ]
+        ],
+        "info": "# JSON Esperado\n\n{\n  \"_id\": \"\",\n  \"_rev\": \"\",\n}"
+    },
+    {
+        "id": "c6d95eadb65d12a2",
+        "type": "http response",
+        "z": "c7bd52643037d91a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "97731a25be04464a",
+        "type": "debug",
+        "z": "c7bd52643037d91a",
+        "name": "Response PUT personagem",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "3f7137731a557ae3",
+        "type": "cloudantplus",
+        "host": "https://apikey-v2-1ktz4lxoza3jin66m1crk4c80mcl83tih2dp98bc2hv:d22c76b55edaeea1c6aa6e6c6bdd81ec@bbd3c0ee-d0c8-455b-bbd3-8d6d996c2c0a-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "",
+        "useapikey": false
+    }
+]
