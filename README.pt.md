@@ -18,6 +18,11 @@ Dentro do curso, juntamente com o aprendizado de soluções tecnologicas com des
 Durante o curso trabalhamos com hardwere microcontroladores e diversos sensores em conecção com o serviço de Iot (Internet das Coisas) da IBM Cloud. Montando prótótipos com conecção via wifi com a internet e elaboração de painéis dashboard para mostrar os dados.
 
 
+
+https://user-images.githubusercontent.com/38532339/219828215-8c858837-d08e-4b9f-97d5-3155fca03519.mp4
+
+
+
 | <img src="Imagens/sim-atmosferico.png" width="400"> | <img src="Imagens/sim-umidade.png" width="400" style="float: left"> |
 | -------- | ---------- |
 
@@ -34,15 +39,19 @@ A Aula1 é um projeto básico que apresenta os conceitos fundamentais de desenvo
 ### Aula2
 A Aula2 é uma continuação da Aula1, onde são explorados conceitos mais avançados do desenvolvimento IOS com Swift. Nesta seção, é possível ver como trabalhar com imagens, backgrounds, alertas e text field, mostrando mais recursos do desenvolvimento swift.
 
-<div style="display: flex; justify-content: center">
-    <img src="Imagens/aula2.png" width="200" style="self-align: center">
-</div>
+
+https://user-images.githubusercontent.com/38532339/219828064-8e13c8ff-99ac-43d9-b847-2026db4b04e8.mp4
+
 
 <br/>
 
 ---
 ### Aula2IMC
 A Aula2IMC é um projeto que permite o cálculo do índice de massa corporal (IMC) e apresenta uma tabela de referência para o usuário. O aplicativo possui um background que muda de cor de acordo com o resultado do cálculo, tornando a experiência do usuário mais visual e interativa.
+
+
+https://user-images.githubusercontent.com/38532339/219828077-4da1e096-fc01-4ba6-90e5-f49037dd4cb2.mp4
+
 
 <br/>
 
@@ -60,9 +69,9 @@ A Aula5DataRequest é um projeto básico que demonstra como utilizar a API Restf
 ### Aula3TabView
 A Aula3TabView é um projeto que apresenta o conceito de TabView e Navigation View, permitindo que o usuário navegue por diferentes telas do aplicativo de forma fácil e intuitiva.
 
-<div style="display: flex; justify-content: center">
-    <img src="Imagens/Aula3TabView.png" width="200" style="self-align: center">
-</div>
+
+https://user-images.githubusercontent.com/38532339/219828089-3a771b14-7810-430f-a3bc-7a5f17385145.mp4
+
 
 <br/>
 
