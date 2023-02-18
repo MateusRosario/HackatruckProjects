@@ -18,6 +18,11 @@ In the course, along with the learning of technological solutions with iOS and h
 During the course, we worked with microcontroller hardware and various sensors in connection with the IBM Cloud IoT service. We built prototypes with WiFi connection to the internet and developed dashboard panels to display the data.
 
 
+
+https://user-images.githubusercontent.com/38532339/219828215-8c858837-d08e-4b9f-97d5-3155fca03519.mp4
+
+
+
 | <img src="Imagens/sim-atmosferico.png" width="400"> | <img src="Imagens/sim-umidade.png" width="400" style="float: left"> |
 | -------- | ---------- |
 
@@ -34,15 +39,19 @@ Aula1 is a basic project that presents the fundamental concepts of iOS applicati
 ### Aula2
 Aula2 is a continuation of Aula1, where more advanced concepts of iOS development with Swift are explored. In this section, it is possible to see how to work with images, backgrounds, alerts, and text fields, showing more Swift development resources.
 
-<div style="display: flex; justify-content: center">
-    <img src="Imagens/aula2.png" width="200" style="self-align: center">
-</div>
+
+https://user-images.githubusercontent.com/38532339/219828064-8e13c8ff-99ac-43d9-b847-2026db4b04e8.mp4
+
 
 <br/>
 
 ---
 ### Aula2IMC
 Aula2IMC is a project that allows the calculation of body mass index (BMI) and presents a reference table for the user. The application has a background that changes color according to the calculation result, making the user experience more visual and interactive.
+
+
+https://user-images.githubusercontent.com/38532339/219828077-4da1e096-fc01-4ba6-90e5-f49037dd4cb2.mp4
+
 
 <br/>
 
@@ -60,9 +69,9 @@ Aula5DataRequest is a basic project that demonstrates how to use the RESTful API
 ### Aula3TabView
 The Aula3TabView is a project that introduces the concept of TabView and Navigation View, allowing the user to navigate through different screens of the application in an easy and intuitive way.
 
-<div style="display: flex; justify-content: center">
-    <img src="Imagens/Aula3TabView.png" width="200" style="self-align: center">
-</div>
+
+https://user-images.githubusercontent.com/38532339/219828089-3a771b14-7810-430f-a3bc-7a5f17385145.mp4
+
 
 <br/>
 
